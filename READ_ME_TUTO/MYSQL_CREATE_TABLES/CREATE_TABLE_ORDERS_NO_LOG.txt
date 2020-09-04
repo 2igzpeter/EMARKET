@@ -1,0 +1,18 @@
+CREATE TABLE ordersNoLog(
+    id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    deliveryId VARCHAR(100) NULL,
+    fk_order_id VARCHAR(100) NULL,
+    deliveryDate VARCHAR(100) NULL,
+    email VARCHAR (100) NULL,
+    firstname VARCHAR (100) NULL,
+    lastname VARCHAR (100) NULL,
+    adresse VARCHAR (100) NULL,
+    zipCode VARCHAR (100) NULL,
+    ville VARCHAR (100) NULL,
+    pays VARCHAR (100) NULL,
+    total VARCHAR (100) NULL,
+    shipping VARCHAR (100) NULL,
+    PRIMARY KEY (id)
+)
+
+ENGINE=INNODB;

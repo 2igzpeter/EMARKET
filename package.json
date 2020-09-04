@@ -1,0 +1,29 @@
+{
+ "name": "node-loginregister",
+ "main": "server.js",
+ "scripts": {
+  "start": "node server",
+  "dev": "nodemon server"
+ },
+ "dependencies": {
+  "ajax": "0.0.4",
+  "bcrypt-nodejs": "0.0.3",
+  "body-parser": "^1.19.0",
+  "connect-flash": "^0.1.1",
+  "cookie-parser": "^1.4.4",
+  "cors": "^2.8.5",
+  "dotenv": "^8.2.0",
+  "ejs": "^2.7.4",
+  "express": "^4.17.1",
+  "express-session": "^1.17.0",
+  "jquery": "^3.0.0",
+  "jquery-migrate": "^3.0.0",
+  "morgan": "^1.9.1",
+  "mysql": "^2.18.1",
+  "passport": "^0.2.2",
+  "passport-local": "^1.0.0"
+ },
+ "devDependencies": {
+  "nodemon": "^2.0.2"
+ }
+}

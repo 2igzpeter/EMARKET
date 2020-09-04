@@ -1,0 +1,27 @@
+INSERT INTO products 
+VALUES
+(NULL, 'accessoire', 'montre', 'Montre GUCCI', 'Take it as demo specs, ipsum dolor sit amet, coit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', '', 'Free shipping', '$1200', NULL, 'Gucci', '/ficheArticleMontre', 'xo4335DF', 'images/items/7.jpg', '', 'total_products'),
+(NULL, 'Audio', 'Casque audio', 'Casque Bose ', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', '', 'Free shipping', '$20', NULL, 'Bose', '/ficheArticleCasque', 'xo4tehdfg335DF', 'images/items/9.jpg', '', 'total_products'),
+(NULL, 'climat', 'Meteo Station', 'Meteo Station Ecobee', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', '', 'Free shipping', '$15', NULL, 'Ecobee', '/ficheArticleMeteo', 'xutkhdfg335DF', 'images/items/10.jpg', '', 'total_products'),
+(NULL, 'Hight tech', 'Go pro', 'Go pro', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', '', 'Free shipping', '$37', NULL, 'Go pro', '/ficheArticleGoPro', 'xuteuyDF', 'images/items/11.jpg', '', 'total_products'),
+(NULL, 'High tech', 'Montre', 'Montre Ecobee', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', 'New', '', '', '$100', NULL, 'Ecobee', '/ficheArticleWatchEcobee', 'xo4tehdfg335DF', 'images/items/7.jpg', '', 'total_products'),
+(NULL, 'Hight tech', 'Casque audio', 'Casque Apple', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', 'New', '', '', '$80', NULL, 'Apple', '/ficheArticleCasqueApple', 'xutkhdfg335DF', 'images/items/9.jpg', '', 'total_products'),
+(NULL, 'High tech', 'Meteo station', 'Meteo station Apple', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', 'New', '', '', '$30', NULL, 'Apple', '/ficheArticleMeteoStationApple', 'xuteuyDF', 'images/items/10.jpg', '', 'total_products'),
+(NULL, 'High tech', 'Go pro', 'Go pro Sony', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', 'new', '', '', '$38', NULL, 'Sony', '/ficheArticleGoProSony', 'xuret4356yDF', 'images/items/11.jpg', '', 'total_products'),
+(NULL, 'accessoire', 'Montre', 'Samsung watch', 'Take it as demo specs, ipsum dolor sit amet, coit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', 'Solde', '', '$120', NULL, 'Samsung', '/ficheArticleSamsungWatch', 'xo4335DF', 'images/items/7.jpg', '$200', 'total_products'),
+(NULL, 'High Tech', 'Casque audio', 'Casque audio Samsung', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', 'Solde', '', '$100', NULL, 'Samsung', '/ficheArticleSamsungCasque', 'xo4tehdfg335DF', 'images/items/9.jpg', '$130', 'total_products'),
+(NULL, 'Hight tech', 'Meteo station', 'Meteo Station Ecobee', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', 'Solde', '', '$7', NULL, 'Ecobee', '/ficheArticleMeteoStation', 'xutkhdfg335DF', 'images/items/10.jpg', '$45', 'total_products'),
+(NULL, 'High tech', 'Go pro', 'Go pro 2 ', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', 'Solde', '', '$37', NULL, 'Go pro', '/ficheArticleGoPro_2', 'xuteuyDF', 'images/items/11.jpg', '$76', 'total_products');
+
+
+
+
+
+
+
+
+
+
+
+
+

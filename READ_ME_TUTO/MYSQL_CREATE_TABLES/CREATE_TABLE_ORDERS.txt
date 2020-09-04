@@ -1,0 +1,29 @@
+
+CREATE TABLE orders (
+    id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    users INT ,
+    orderId VARCHAR (100) NULL,
+    objetId VARCHAR (100) NULL,
+    fkUserId VARCHAR (100) NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (users) REFERENCES inscrits(id)
+)
+ENGINE=INNODB;
+
+
+
+CREATE TABLE orders (
+  id int(11) NOT NULL PRIMARY KEY,
+  orderId int(11) NOT NULL,
+  objetId int(11) NOT NULL,
+  fkUserId int(11) not null,
+  users VARCHAR (1000) NOT NULL
+  CONSTRAINT fk_order_id FOREIGN KEY (fkUserId) REFERENCES delivery (fk_order_id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+
+
+
+
+ALTER TABLE orders
+ADD CONSTRAINT fk_users_id FOREIGN KEY (users) REFERENCES inscrits(id);

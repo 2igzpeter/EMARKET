@@ -1,0 +1,15 @@
+
+
+
+////////////////////////////////////////////////////////////
+
+
+CREATE TABLE newsletters (
+    id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    email VARCHAR(100) NULL,
+    PRIMARY KEY (id)
+)
+ENGINE=INNODB;
+
+////////////////////////////////////////////////////////
+

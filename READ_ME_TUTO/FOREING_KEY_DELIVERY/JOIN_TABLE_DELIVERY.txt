@@ -1,0 +1,5 @@
+
+SELECT *
+FROM delivery
+INNER JOIN orders ON orders.id = delivery.users;
+

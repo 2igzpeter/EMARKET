@@ -1,0 +1,5 @@
+
+
+INSERT INTO orders
+VALUES 
+(NULL, '1', '123456', '23456', '1');

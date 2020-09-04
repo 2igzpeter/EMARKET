@@ -1,0 +1,41 @@
+CREATE NOUVEL UTILISATEUR 
+//////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+CREATE USER 'superman'@'localhost' IDENTIFIED BY 'mypassword';
+GRANT ALL PRIVILEGES ON *.* TO 'superman'@'localhost';
+FLUSH PRIVILEGES;
+
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+Autoriser la connexion autre que depuis localhost
+Comme vu précédemment, vous pouvez créer un utilisateur ayant le droit de se connecter depuis autre part que localhost. Dans ce cas veillez à bien sécuriser la connexion à ce serveur.
+
+CREATE USER 'superman'@'*' IDENTIFIED BY 'mypasswordall';
+CREATE USER 'superman'@'192.168.1.*' IDENTIFIED BY 'mypasswordlocal';
+Via la première commande, l’utilisateur superman pourra se connecter depuis n’importe quelle adresse IP tant qu’il met le bon mot de passe. L’utilisateur, créé dans la seconde commande, ne pourra se connecter lui que depuis le réseau 192.168.1.0/24, bien sur il lui faudra utiliser le bon mot de passe mypasswordlocal qui est spécifique à cette source.
+
+La création des utilisateurs est une chose mais elle ne permet pas pour autant à vos utilisateurs de vous connecter sur votre serveur. Par défaut (sous Debian), le serveur MySQL est configuré pour n’écouter que l’adresse localhost. Il faut donc configurer celui-ci pour écouter depuis toutes les adresses. Pour ordonner à votre serveur d’écouter toutes les adresses, vous devez modifier la variable bind-address du fichier de configuration /etc/mysql/my.cnf tel que :
+
+# vi /etc/mysql/my.cnf
+...
+bind-address            = 0.0.0.0
+ATTENTION : Une bonne configuration de votre pare-feu sera nécessaire afin de sécuriser votre serveur MySQL.
+
+Attribution des droits
+Dernière étape, attribuer les bon droits à vos utilisateurs. Jusqu’à présent, je ne vous ai parlé que de remplaçants du super-utilisateur. Je vais donc continuer comme cela car la gestion des droits MySQL est très complète et il me faudrait un article complet pour vous informer dessus.
+
+Pour donner tous les droits à votre utilisateur sur l’ensemble des bases de données contenus sur votre serveur, vous devrez utiliser les commandes suivantes :
+
+GRANT ALL PRIVILEGES ON *.* TO 'superman'@'localhost';
+FLUSH PRIVILEGES;
+La première sert à spécifier les droits de l’utilisateur superman se connectant depuis localhost. La seconde sert à enregistrer et appliquer les droits de suite. Comme indiquer plus haut, vous devrez répéter la première commande pour chaque source de connexion de votre utilisateur. Ce qui donne pour les utilisateurs précédemment créés
+
+GRANT ALL PRIVILEGES ON *.* TO 'superman'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'superman'@'192.168.1.*';
+GRANT ALL PRIVILEGES ON *.* TO 'superman'@'*';
+FLUSH PRIVILEGES;
+Si vous voulez attribuer le même mot de passe quel que soit la source de connexion de votre utilisateur, je vous conseille de ne créer que l’utilisateur superman@*. En effet rien de plus déplaisant que de ne pouvoir se accéder à une base de donnée particulière depuis localhost car les droits sur celle-ci n’ont été attribué qu’à l’utilisateur se connectant depuis une adresse externe et non à celui se connectant depuis localhost.
+
+Dans un prochain article, nous verrons comment MySQL vous permet de limiter les droits de manière très précise. En attendant vous trouverez votre bonheur dans la doc MySQL sur Grant

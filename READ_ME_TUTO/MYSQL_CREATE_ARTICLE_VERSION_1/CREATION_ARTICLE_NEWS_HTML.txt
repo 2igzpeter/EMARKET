@@ -1,0 +1,56 @@
+
+
+
+
+//////////////////////////////////////////////////////////////
+
+INSERER MONTRE
+
+
+INSERT INTO products
+VALUES (NULL, 'High tech', 'Montre', 'Montre Ecobee', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', 'New', '', '', '$100', NULL, 'Ecobee', '/ficheArticleWatchEcobee', 'xo4tehdfg335DF', 'images/items/7.jpg', '', 'total_products');
+
+
+////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////
+
+INSERER CASQUE
+
+
+INSERT INTO products
+VALUES (NULL, 'Hight tech', 'Casque audio', 'Casque Apple', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', 'New', '', '', '$80', NULL, 'Apple', '/ficheArticleCasqueApple', 'xutkhdfg335DF', 'images/items/9.jpg', '', 'total_products');
+
+
+////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////
+
+INSERER STATION METEO
+
+
+INSERT INTO products
+VALUES (NULL, 'High tech', 'Meteo station', 'Meteo station Apple', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', 'New', '', '', '$30', NULL, 'Apple', '/ficheArticleMeteoStationApple', 'xuteuyDF', 'images/items/10.jpg', '', 'total_products');
+
+
+////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////
+
+INSERER GO PRO
+
+
+INSERT INTO products
+VALUES (NULL, 'High tech', 'Go pro', 'Go pro Sony', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', 'new', '', '', '$38', NULL, 'Sony', '/ficheArticleGoProSony', 'xuret4356yDF', 'images/items/11.jpg', '', 'total_products');
+
+
+

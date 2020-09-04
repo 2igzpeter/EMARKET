@@ -1,0 +1,15 @@
+////////////////////////////////////////////////////////////////
+
+
+CREATE TABLE contacts (
+    id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NULL,
+    email VARCHAR(100) NULL,
+    phone VARCHAR(100) NULL,
+    company VARCHAR(100) NULL,
+    contactMessage VARCHAR(1000) NULL,
+    PRIMARY KEY (id)
+)
+ENGINE=INNODB;
+
+

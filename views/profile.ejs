@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+ <link type="text/css" rel="stylesheet" src="css/animate.css">
+ <link type="text/css" rel="stylesheet" src="css/bootstrap-theme.min.css">
+ <link type="text/css" rel="stylesheet" src="css/bootstrap.min.css">
+
+ 
+
+<!--   LOCAL SCRIPT JQUERRY BOOTSTRAP  -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/jquerry.slim.min.js"></script>
+<script src="js/jquery-1.12.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.jquery.sharrre.js"></script>
+<script src="js/jquery.share.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+
+ <!--BOOTSTRAP-->
+ <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+
+ <!--ICON BOOTSTRAP-->
+ <link rel="stylesheet" 
+ href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+ <title>Profile</title>
+
+ <style>
+  html{
+   padding:50px;
+  }
+
+  #container_head{
+      display: ;
+      flex-direction: ;
+  }
+
+  #container_media{
+      width: 100%;
+      height: 350px;
+      display: flex;
+
+  }
+
+  iframe{
+      width: 100%;
+      height: auto;
+  }
+  #container_resume{
+      width: 300px;
+      height: 300px;
+
+  }
+  
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+ </style>
+</head>
+<body>
+ <div class="container-fluid">
+  <div class="page-header text-center">
+   <h1>My Profile</h1>
+   <a href="/" class="btn btn-primary btn-sm">Home</a>
+   <a href="/login" class="btn btn-primary btn-sm">Login</a>
+   <a href="/signup" class="btn btn-info btn-sm">Register</a>
+   <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+  </div>
+
+  <div class="row">
+   <div class="col-sm-12">
+    <div class="well">
+     <h3><span class="fa fa-user"></span> Welcome <%= user.username %></h3>
+
+     <p>
+      <strong>id</strong> <%= user.id %> <br>
+      <strong>username</strong> <%= user.username %> <br>
+     </p>
+    
+      <strong>Mot de passe BCRYPT:</strong> <%= user.password %>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ 
+
+<div>
+    <div class="well">
+        
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" class="btn btn-primary btn-sm">Build Post</button>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  
+
+  <!-- Modal content -->
+  <div class="modal-content ">
+    <span class="close">&times;</span>
+    <h3 style="text-align: center;">POST FORM</h3>
+
+    <form action="/result" method="POST" >
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nom TV_CHAIN</label>
+          <p>Some text in the Modal..</p>
+
+          <input type="text" class="form-control" id="input_nom" placeholder="Socity name" name="post_socity">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">categorie</label>
+          <p>Post_titre </p>
+
+          <input id="input_categorie" class="form-control form-control-lg" type="text" placeholder="post_categorie" name="post_categorie">
+
+        </div>
+
+
+
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Titre</label>
+            <p>Post_titre </p>
+
+            <input id="input_titre" class="form-control form-control-lg" type="text" placeholder="Post_titre" name="post_titre">
+
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Vidéo</label>
+            <p>youtube </p>
+
+            <input id="input_titre" class="form-control form-control-lg" type="text" placeholder="youtube_video" name="post_video">
+
+          </div>
+
+
+
+          
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">RESUME </label>
+            <p>POST RESUME</p>
+
+            <textarea class="form-control" id="input_resume" rows="3" name="post_resume"></textarea>
+
+
+            
+          </div>
+
+
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">name reporter</label>
+            <p>Name reporter</p>
+
+            <input id="input_titre" class="form-control form-control-lg" type="text" placeholder="Name reporter" name="post_reporter">
+
+          </div>
+
+
+
+
+          <button id="input_btn" type="submit" class="btn-lg btn-block btn-primary">Valide</button>
+      </form>
+
+
+
+
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+       
+    </div>
+</div>
+
+
+
+ <div id="container"></div>
+ 
+<script src="foreach_view_post.js">
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+</script>
+ 
+<script src="js/bootstrap.min.js "></script>
+
+         <!--jquery-->
+         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+         <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+         <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+        </body>
+
+</html>

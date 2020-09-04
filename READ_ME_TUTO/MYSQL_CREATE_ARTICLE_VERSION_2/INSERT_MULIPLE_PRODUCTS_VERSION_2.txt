@@ -1,0 +1,9 @@
+INSERT INTO products 
+VALUES 
+(NULL, 'High tech', 'Meteo station', 'Meteo Station', 'Hot sale meteo station Ecobee', '', 'Solde', '', '$10', NULL, 'Ecobee', '/page_categorie_product_details_add_to_cart_meteo_station_ecobee_1_version_2', 'xutkhdfg335DF', 'images/items/10.jpg', '-20%', 'total_products'),
+(NULL, 'High tech', 'Gopro', 'Gopro 2 ', 'Hot sale gopro 2 Samsung', '', 'Solde', '', '$40', NULL, 'Samsung', '/page_categorie_product_details_add_to_cart_go_pro_samsung_1_version_2', 'xuteuyDF', 'images/items/11.jpg', '-15%', 'total_products'),
+(NULL, 'High tech', 'Montre', 'Montre apple watch 2', 'Hot sale apple watch 2', 'New', '', '', '$40', NULL, 'Apple', '/page_categorie_product_details_add_to_cart_apple_watch_2_version_2', 'xo4tehdfg335DF', 'images/items/7.jpg', '', 'total_products'),
+(NULL, 'High tech', 'Casque audio', 'Casque Samsung ', 'Hot sale headphone samsung', '', '', 'Free shipping', '$10', NULL, 'Samsung', '/page_categorie_product_details_add_to_cart_casque_audio_samsung_1_version_2', 'xo4tehdfg335DF', 'images/items/9.jpg', '', 'total_products'),
+(NULL, 'High tech', 'Casque audio', 'Casque Sony', 'Hot sale headphone sony', 'New', '', '', '$80', NULL, 'Sony', '/page_categorie_product_details_add_to_cart_casque_sony_version_2', 'xutkhdfg335DF', 'images/items/9.jpg', '', 'total_products'),
+(NULL, 'High tech', 'montre', 'Montre Samsung', 'Hot sale watch samsung', '', '', 'Free shipping', '$10', NULL, 'Samsung', '/page_categorie_product_details_add_to_cart_watch_samsung_version_2', 'xo4335DF', 'images/items/7.jpg', '', 'total_products');
+      

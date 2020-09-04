@@ -1,0 +1,4 @@
+
+ALTER TABLE orders
+ADD CONSTRAINT fk_inscrits_id FOREIGN KEY (users) REFERENCES inscrits(id);
+

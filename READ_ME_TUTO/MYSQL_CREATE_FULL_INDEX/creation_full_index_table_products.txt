@@ -1,0 +1,6 @@
+
+
+CREATE FULLTEXT INDEX ind_search_bar_menu ON products (type_product, type_article, titre_article, description_article, news_article, solde_article, free_shipping_article, price_article, price_less, band_article, link_fiche_article, id_article, price_solde, total_product);
+
+
+

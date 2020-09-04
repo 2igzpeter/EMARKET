@@ -1,0 +1,28 @@
+////////////////////////////////////////////////////////////////
+
+
+CREATE TABLE products (
+    id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    type_product VARCHAR(100) NULL,
+    type_article VARCHAR(1000) NULL,
+    titre_article VARCHAR(1000) NULL,
+    description_article VARCHAR(1000) NULL,
+    news_article VARCHAR(1000) NULL,
+    solde_article VARCHAR(1000) NULL,
+    free_shipping_article VARCHAR(1000) NULL,
+    price_article VARCHAR(1000) NULL,
+    price_less VARCHAR (1000) NULL,
+    band_article VARCHAR (100) NULL,
+    link_fiche_article VARCHAR (1000) NULL,
+    id_article VARCHAR (1000) NULL,
+    img_article VARCHAR (1000) NULL,
+    price_solde VARCHAR (1000) NULL,
+    total_product VARCHAR (100) NULL,
+    PRIMARY KEY (id)
+)
+ENGINE=INNODB;
+
+
+
+
+

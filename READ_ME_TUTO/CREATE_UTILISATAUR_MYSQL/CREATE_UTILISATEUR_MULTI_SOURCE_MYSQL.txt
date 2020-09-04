@@ -1,0 +1,3 @@
+CREATE USER 'peter'@'*' IDENTIFIED BY 'protekyanek';
+GRANT ALL PRIVILEGES ON *.* TO 'peter'@'*';
+FLUSH PRIVILEGES;

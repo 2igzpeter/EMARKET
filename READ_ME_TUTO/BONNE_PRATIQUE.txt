@@ -1,0 +1,43 @@
+CRUD : CREATE/ READ/ UPDATE/ DELETE
+SGBD : SYSTEM GESTION BASE DONNEE
+SGBS : SYSTEM GESTION BASE DONNEE RELATIONNEL
+SQL (Structured Query Language) 
+MOTEUR DE TABLE: InnoDB: gère les clef étrangère et les transactions,
+ définir des relations entre plusieurs tables:
+PRECISER LE MOTEUR DE TABLE A LA CREATION DE LA TABLE>>>> MySql CMD: ENGINE = INNODB;
+
+
+PRATIQUE:
+N'utilisez jamais, au grand jamais,
+ d'espaces ou d'accents dans vos noms de bases, tables ou colonnes.
+Noms de tables et de colonnes
+"date_de_naissance" ou "date_naissance".
+
+Évitez également d'utiliser des mots réservés comme nom de colonnes/tables/bases. 
+Par "mot réservé", j'entends un mot-clé SQL,
+ donc un mot qui sert à définir quelque chose dans le langage SQL.
+
+Toutefois, par habitude et parce que je trouve cela plus clair,
+ je mettrai une majuscule à la première lettre de mes noms de tables
+ (et uniquement pour les tables : ni pour la base de données ni pour les colonnes). 
+Notez que MySQL n'est pas nécessairement sensible à la casse en ce qui concerne les noms de tables et de colonnes.
+ En fait, il est très probable que si vous travaillez sous Windows,
+ MySQL ne soit pas sensible à la casse pour les noms de tables et de colonnes. 
+Sous Mac et Linux, par contre, c'est le contraire qui est le plus probable.
+Quoi qu'il en soit, j'utiliserai des majuscules pour la première lettre de mes noms de tables.
+
+SAVE DATABASE: SOUS TYPE DE FICHIER: mysqldump 
+Cette fonction de sauvegarde s'utilise à partir de la console.
+ Vous devez donc être déconnecté de MySQL pour la lancer.
+ Si vous êtes connecté, tapez simplement  exit.
+CMD: mysqldump -u [user] -p --opt [nom_de_la_base] > sauvegarde.sql
+(-p pour un utilisateur et -t pour root)
+
+CREER UNE DATABASE A PARTIR D'UN FICHIER .SQL :
+CREATE DATABASE nom_de_la_base;
+puis: mysql nom_base < chemin_fichier_de_sauvegarde.sql
+
+
+
+
+

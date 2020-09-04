@@ -1,0 +1,56 @@
+
+
+//////////////////////////////////////////////////////////////
+
+INSERER MONTRE
+
+
+INSERT INTO products
+VALUES (NULL, 'accessoire', 'montre', 'Montre GUCCI', 'Take it as demo specs, ipsum dolor sit amet, coit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', '', 'Free shipping', '$1200', NULL, 'Gucci', '/ficheArticleMontre', 'xo4335DF', 'images/items/7.jpg', '', 'total_products');
+
+
+////////////////////////////////////////////////////////////
+
+
+
+
+
+//////////////////////////////////////////////////////////////
+
+INSERER CASQUE
+
+
+INSERT INTO products
+VALUES (NULL, 'Audio', 'Casque audio', 'Casque Bose ', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', '', 'Free shipping', '$20', NULL, 'Bose', '/ficheArticleCasque', 'xo4tehdfg335DF', 'images/items/9.jpg', '', 'total_products');
+
+
+////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////
+
+INSERER STATION METEO
+
+
+INSERT INTO products
+VALUES (NULL, 'climat', 'Meteo Station', 'Meteo Station Ecobee', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', '', 'Free shipping', '$15', NULL, 'Ecobee', '/ficheArticleMeteo', 'xutkhdfg335DF', 'images/items/10.jpg', '', 'total_products');
+
+
+////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////
+
+INSERER GOPRO
+
+
+INSERT INTO products
+VALUES (NULL, 'Hight tech', 'Go pro', 'Go pro', 'Take it as demo specs, ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Ut wisi enim ad minim veniam', '', '', 'Free shipping', '$37', NULL, 'Go pro', '/ficheArticleGoPro', 'xuteuyDF', 'images/items/11.jpg', '', 'total_products');
+
+
+////////////////////////////////////////////////////////////
+
